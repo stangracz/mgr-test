@@ -1,2 +1,6 @@
 uwagi:
-co najmniej 3 serie po 3 pliki lub pary (przetwarzanie pojedynczych plików i par plików)
+co najmniej 3 serie par lub 3 pliki (przetwarzanie pojedynczych plików i par plików)
+
+stałe powinny być przetwarzane przed językiem programowania - po 1 żeby język mógł sobie korzystać, po 2, żeby było to globalne
+
+
