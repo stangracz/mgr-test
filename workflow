@@ -2,4 +2,7 @@
 2. Instalacja GIT 2.17.1
 3. Ściągnięcie Umbrello do modyfikacji UML
 4. Ściągnięcie danych z https://download.osgeo.org/geotiff/samples/
-4. Zaczynamy od najniższego poziomu - C w stylu funkcyjnym
+5. Zaczynamy od najniższego poziomu - C w stylu funkcyjnym
+6. Instalacja Ecilpse
+7. Kompiler C
+
