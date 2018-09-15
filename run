@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 preprocess/fileslist
-make code/c/make
+python3 preprocess/fileslist.py
+code/c/bla
 
 zenity --info --text="Process terminated succesfully" --title="Information"

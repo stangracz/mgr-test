@@ -1,0 +1,6 @@
+#!/bin/bash
+
+make code/c/bla
+make code/c/process
+
+zenity --info --text="Compilation terminated" --title="Information"

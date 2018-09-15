@@ -43,7 +43,7 @@ class Filelist:
 					for j in files:
 						j = i + '/' + j				
 						tab.append([j])
-					tab.append(';')		
+					tab.append(',')		
 			self.__paired = tab
 		except:
 			raise #badPathErr
@@ -53,12 +53,11 @@ class Filelist:
 	def __populateFiles(self):
 		for i in self.__single:
 			if (i != initialValues.filename):
-				self.__fSingle.write(i + '\n')
+				self.__fSingle.write(i + ';')
 		for i in self.__paired:
 			for j in i:
-				self.__fPaired.write(j + '\n')
+				self.__fPaired.write(j + ';')
 		
-
 try:
 	Filelist()
 except badOSErr as e:
