@@ -5,4 +5,4 @@
 5. Zaczynamy od najniższego poziomu - C w stylu funkcyjnym
 6. Instalacja Ecilpse
 7. Kompiler C
-
+8. autoconf

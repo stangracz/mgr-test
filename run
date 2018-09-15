@@ -1,0 +1,6 @@
+#!/bin/bash
+
+python3 preprocess/fileslist
+make code/c/bla
+
+zenity --info --text="Process terminated succesfully" --title="Information"

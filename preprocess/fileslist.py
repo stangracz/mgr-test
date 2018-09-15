@@ -3,8 +3,8 @@ import os
 # initial values
 class initialValues:
 	systems = ['posix']
-	single = '../data/single/'
-	paired = '../data/paired/'
+	single = 'data/single/'
+	paired = 'data/paired/'
 	filename = 'list.tmp'
 	
 
@@ -39,7 +39,11 @@ class Filelist:
 			tab = []
 			for i in paired_cat:
 				if (i != initialValues.filename):
-					tab.append(os.listdir(initialValues.paired + '/' + i))
+					files = os.listdir(initialValues.paired + '/' + i)
+					for j in files:
+						j = i + '/' + j				
+						tab.append([j])
+					tab.append(';')		
 			self.__paired = tab
 		except:
 			raise #badPathErr
@@ -52,8 +56,7 @@ class Filelist:
 				self.__fSingle.write(i + '\n')
 		for i in self.__paired:
 			for j in i:
-				self.__fPaired.write(j + ';')
-			self.__fPaired.write('\n')
+				self.__fPaired.write(j + '\n')
 		
 
 try:
